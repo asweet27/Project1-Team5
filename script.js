@@ -1,0 +1,12 @@
+$(document).ready(function() {
+    var url = 'http://newsapi.org/v2/top-headlines?' +
+    'country=us&' +
+    'apiKey=6c1e4b0f26f7483c8541930bb8709d77';
+
+    $.get(url).then(function(data) {
+        console.log(data.articles)
+    });
+});
+
+   
+
