@@ -1,4 +1,3 @@
--Master-
 .top-bar, .top-bar-right{
     background-color: rgb(34, 19, 248);
 }
@@ -8,14 +7,15 @@
     color: white;
     background-color: rgb(34, 19, 248);
 }
-.menu :hover{
+.menu button:hover{
     
     background-color: lime;
 }
+
 .menu button, .menu input {
     margin-bottom: 0;
     margin-right: auto;
-    ;
+    
 }
 
 h1{

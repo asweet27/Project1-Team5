@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
     'country=us&' +
@@ -5,6 +7,13 @@ $(document).ready(function() {
 
     $.get(url).then(function(data) {
         console.log(data.articles)
+
+        var xx = document.getElementById("apiText");
+
+//xx.innerHTML += (data.articles);
+var content = document.createTextNode(data.articles);
+
+xx.appendChild(content);
     });
 });
 
