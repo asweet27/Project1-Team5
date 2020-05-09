@@ -12,3 +12,29 @@ $(document).ready(function() {
 });
    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$.getJSON(
+    "https://covidtracking.com/api/v1/states/info.json", 
+    function(data) {
+        console.log(data);
+    }
+);
