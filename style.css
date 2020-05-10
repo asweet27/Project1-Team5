@@ -1,0 +1,37 @@
+.top-bar, .top-bar-right{
+    background-color: rgb(34, 19, 248);
+}
+
+.menu>li>a
+{
+    color: white;
+    background-color: rgb(34, 19, 248);
+}
+.menu button:hover{
+    
+    background-color: lime;
+}
+
+.menu button, .menu input {
+    margin-bottom: 0;
+    margin-right: auto;
+    
+}
+
+h1{
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    stroke: rgb(133, 133, 170);
+}
+.subheader
+{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+body{
+    background-color: whitesmoke;
+}
+
