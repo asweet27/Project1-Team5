@@ -22,16 +22,21 @@ h1{
     font: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    stroke: rgb(133, 133, 170);
+    stroke: rgb(248, 248, 248);
 }
 .subheader
 {
-    background-color: white;
+    background-color: transparent;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 body{
-    background-color: whitesmoke;
+    background-color: white;
+}
+.links
+{
+    font-size: 25px;
+    text-align: right;
 }
 
