@@ -9,31 +9,31 @@ $(document).ready(function() {
        
      
 				
-       $("#blog-0").text(data.articles[0].title)
-       //$("#para-0").text(data.articles[0].content)
-       if(data.articles[1].content.length > 50) {
-        //$("#para-0").text(data.articles[0].content) 
-        $("#para-0").text("apple")
-       }
-       $("#img-0").attr("src", data.articles[0].urlToImage)
-       $(".links").attr("href",data.articles[0].url)
-      
+        $("#blog-0").text(data.articles[0].title)
+        $("#para-0").text(data.articles[0].content)
+        $("#img-0").attr("src", data.articles[0].urlToImage)
+        $("#link-0").attr("href",data.articles[0].url)
        
-
-
-       $("#blog-1").text(data.articles[1].title )
-       $("#para-1").text(data.articles[1].content)
-       $("#img-1").attr("src", data.articles[1].urlToImage)
-       $(".links").attr("href",data.articles[1].url)
-
-
-       $("#blog-2").text(data.articles[2].title)
-       $("#para-2").text(data.articles[2].content)
-       $("#img-2").attr("src", data.articles[2].urlToImage)
-       $(".links").attr("href",data.articles[2].url)
+  
+ 
+ 
+        $("#blog-1").text(data.articles[1].title )
+        $("#para-1").text(data.articles[1].content)
+        $("#img-1").attr("src", data.articles[1].urlToImage)
+        $("#link-1").attr("href",data.articles[1].url)
+ 
+ 
+        $("#blog-2").text(data.articles[2].title)
+        $("#para-2").text(data.articles[2].content)
+        $("#img-2").attr("src", data.articles[2].urlToImage)
+        $("#link-2").attr("href",data.articles[2].url)
+ 
         
-        console.log(data.articles)
-    
+ 
+        
+         
+         console.log(data.articles)
+     
 
 
     });
