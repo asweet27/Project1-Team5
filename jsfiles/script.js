@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
     'country=us&' +
@@ -9,7 +10,11 @@ $(document).ready(function() {
      
 				
        $("#blog-0").text(data.articles[0].title)
-       $("#para-0").text(data.articles[0].content)
+       //$("#para-0").text(data.articles[0].content)
+       if(data.articles[1].content.length > 50) {
+        //$("#para-0").text(data.articles[0].content) 
+        $("#para-0").text("apple")
+       }
        $("#img-0").attr("src", data.articles[0].urlToImage)
        $(".links").attr("href",data.articles[0].url)
       

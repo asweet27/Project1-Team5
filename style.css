@@ -1,3 +1,7 @@
+.hide-content {
+    display: none
+}
+
 .top-bar, .top-bar-right{
     background-color: rgb(34, 19, 248);
 }
