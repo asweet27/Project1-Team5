@@ -3,94 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>In The Know| Welcome</title>
     
-    <!-- Master -->
+    
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
+    
     <!-- Start Top Bar -->
     <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="menu">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Sports.html">Sports</a></li>
-            <li><a href="Politics.html">Politics</a></li>
-            <li><a href="Popculture.html">Pop Culture</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Sports.html">Sports</a></li>
+          <li><a href="Politics.html">Politics</a></li>
+          <li><a href="Popculture.html">Pop Culture</a></li>
+        </ul>
       </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search" id="userSearch"></li>
+          <li><button type="button" class="button" id="searchBtn">Search</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <div id="homePage">
+    <div class="callout small primary">
+      <div class="row column text-center">
+        <br>
+        <h1>IN THE KNOW</h1>
+
+        <br>
+        <br>
+        <h4 class="subheader"> Needless to say, 2020 has been a very crazy year. A lot has 
+          happened that has changed the very structure of our society. In the midst of of 
+          such troubling times, it's very easy to lose track of all the information and news 
+          being outputted all at once. Here, we provide you with a one stop solution in efforts
+          to hopefully bridge that division and help keep you updated on what is currently trending.
+        </h4>
+      </div>
+    </div>
+
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+  <div class="row medium-8 large-7 columns">
     
 
-      <!-- We can maybe have a layout like this for the tab pages? Also have to adjust the CSS ie subheadertab? -->
+      <div class="blog-post">
+        <h3 id= "blog-0">Awesome blog post title <small id = "date">3/6/2015</small></h3>
+        <img id="img-0" class="thumbnail" src="https://placehold.it/850x350">
+        <div id="para-0"></div>
+        <br>
+        <a id="link-0" href=""> Click here for full article </a>        
+      </div>
+
       <br>
 
-      <div class="row">
-      
-        <div class="medium-7 large-6 columns hide-content" id="sportsPage">
-          <h1>Close Your Eyes and Open Your Mind</h1>
-          <p class="subheader">Health is a state of physical, mental and social well-being in which disease and infirmity are absent.</p>
-        </div>
-      
-        <div class="show-for-large large-3 columns">
-          <img src="https://placehold.it/400x370&text=PSR1257 + 12 C" alt="picture of space">
-        </div>
+      <div class="blog-post">
+        <h3 id= "blog-1">Awesome blog post title <small  id = "date">3/6/2015</small></h3>
+        <img id="img-1" class="thumbnail" src="https://placehold.it/850x350">
+        <p id="para-1"></p> 
+        <br>       
+        <a id="link-1" href=""> Click here for full article </a>  
       </div>
-      
-      <div class="row column">
-        <hr>
-      </div>
-      
-      
-      <div class="row small-up-1 medium-up-2 large-up-3 hide-content">
-        <div class="column">
-          <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-          </div>
-        </div>
 
+      <br>
+
+      <div class="blog-post">
+        <h3 id= "blog-2">Awesome blog post title <small id = "date">3/6/2015</small></h3>
+        <img id="img-2" class="thumbnail" src="https://placehold.it/850x350">
+        <p id="para-2"></p> 
+        <a id="link-2" href=""> Click here for full article</a>       
+        
+      </div>
+
+      
+      
+    </div>
+  </div>
+  <div class="row medium-8 large-7 columns hide-content" id="searchResults">
+    <h3 id= "search-1">Awesome blog post title <small>3/6/2015</small></h3>
+    <img id="searchimg-1" class="thumbnail" src="https://placehold.it/850x350">
+    <p id="searchpara-1">Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+    <dl id="searchResults">
+     <div>
+      <dt id="result-1"></dt>
+      <dd id="content-1"></dd>
+     </div>
+      <div>
+        <dt id="result-2"></dt>
+        <dd id="content-2"></dd>
+      </div>
+      <div>
+        <dt id="result-3"></dt>
+        <dd id="content-3"></dd>
+      </div>
+      <div>
+        <dt id="result-4"></dt>
+      <dd id="content-4"></dd>
+      </div>
+      <div>
+      <dt id="result-5"></dt>
+      <dd id="content-5"></dd>
+      </div>
+    </dl>
+  </div>
+    
    
-
-  
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-        <script src="jsfiles/health.js"></script>
-        <script src="jsfiles/script.js"></script>
-        <script src="jsfiles/search.js"></script>  
-        <script>
-          $(document).foundation();
-        </script>
-  
-  
-  
-  
-  
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="jsfiles/script.js"></script>
+    <script src="jsfiles/search.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
