@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
-    var url = 'https://api.breakingapi.com/news?' +
-    'api_key=2825802972084EA68F6340650311FDC9' +
-    'demo&type=headlines&source=tmz';
+    var url = 'http://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=78d8701a362e49b5b7cb20b63d0913a5';
 
 
 
@@ -23,10 +21,25 @@ $(document).ready(function() {
         $("#link-1").attr("href",data.articles[1].url)
  
  
-        $("popTitle").text(data.articles[2].title)
+        $("#popTitle-2").text(data.articles[2].title)
         $("#poppara-2").text(data.articles[2].description)
         $("#popimg-2").attr("src", data.articles[2].urlToImage)
         $("#link-2").attr("href",data.articles[2].url)
+
+        $("#popTitle-3").text(data.articles[3].title)
+        $("#poppara-3").text(data.articles[3].description)
+        $("#popimg-3").attr("src", data.articles[3].urlToImage)
+        $("#link-3").attr("href",data.articles[3].url)
+
+        $("#popTitle-4").text(data.articles[4].title)
+        $("#poppara-4").text(data.articles[4].description)
+        $("#popimg-4").attr("src", data.articles[4].urlToImage)
+        $("#link-4").attr("href",data.articles[4].url)
+
+        $("#popTitle-5").text(data.articles[5].title)
+        $("#poppara-5").text(data.articles[5].description)
+        $("#popimg-5").attr("src", data.articles[5].urlToImage)
+        $("#link-5").attr("href",data.articles[5].url)
  
         
  

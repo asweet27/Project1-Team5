@@ -24,9 +24,15 @@
 
 h1{
     font: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     stroke: rgb(248, 248, 248);
+}
+#current
+{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 .subheader
 {

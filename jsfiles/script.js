@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
     'country=us&' +
@@ -10,11 +9,8 @@ $(document).ready(function() {
 
 				
         $("#blog-0").text(data.articles[0].title)
-<<<<<<< HEAD
         $("#para-0").text(data.articles[0].description) //substring here based on the three periods
-=======
         $("#para-0").text(data.articles[0].description)
->>>>>>> 5eb067b85f07cfb8fe4b83536de72d62b6f37600
         $("#img-0").attr("src", data.articles[0].urlToImage)
         $("#link-0").attr("href",data.articles[0].url)
         
@@ -47,5 +43,3 @@ $(document).ready(function() {
 
    
 });
-   
-
