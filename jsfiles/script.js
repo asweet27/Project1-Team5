@@ -10,17 +10,24 @@ $(document).ready(function() {
 
 				
         $("#blog-0").text(data.articles[0].title)
+<<<<<<< HEAD
         $("#para-0").text(data.articles[0].description) //substring here based on the three periods
+=======
+        $("#para-0").text(data.articles[0].description)
+>>>>>>> 5eb067b85f07cfb8fe4b83536de72d62b6f37600
         $("#img-0").attr("src", data.articles[0].urlToImage)
         $("#link-0").attr("href",data.articles[0].url)
-       
+        
+        
+    
   
- 
+       
  
         $("#blog-1").text(data.articles[1].title )
         $("#para-1").text(data.articles[1].description)
         $("#img-1").attr("src", data.articles[1].urlToImage)
         $("#link-1").attr("href",data.articles[1].url)
+
  
  
         $("#blog-2").text(data.articles[2].title)
