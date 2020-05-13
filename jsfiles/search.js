@@ -4,10 +4,17 @@ $(document).ready(function() {
     'apiKey=6c1e4b0f26f7483c8541930bb8709d77';
    
     $("#searchBtn").on("click", function() {
+        
         $("#homePage").addClass("hide-content")
         $("#searchResults").removeClass("hide-content")
         var userInput = $("#userSearch").val().trim()
         var searchURL = "https://newsapi.org/v2/everything?q=" + userInput +  "&apiKey=6c1e4b0f26f7483c8541930bb8709d77"
+        if(userInput == "")
+        {
+            alert("Search field cannot be empty")
+            window.location.reload();
+        }
+        else
         console.log($("#userSearch").val().trim())
         $.get(searchURL).then(function(data) {
             $("#search-1").text(data.articles[0].title)
