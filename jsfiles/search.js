@@ -2,20 +2,22 @@ $(document).ready(function() {
     var url = 'http://newsapi.org/v2/top-headlines?' +
     'country=us&' +
     'apiKey=6c1e4b0f26f7483c8541930bb8709d77';
-   
-    $("#searchBtn").on("click", function() {
+    
+
+    function renderSearch () {
         
         $("#homePage").addClass("hide-content")
+        $("#articles").addClass("hide-content")
         $("#searchResults").removeClass("hide-content")
-        var userInput = $("#userSearch").val().trim()
-        var searchURL = "https://newsapi.org/v2/everything?q=" + userInput +  "&apiKey=6c1e4b0f26f7483c8541930bb8709d77"
-        if(userInput == "")
-        {
-            alert("Search field cannot be empty")
-            window.location.reload();
+        var userInput = $("#userSearch").val()
+        if(!userInput) {
+            return alert("Search field cannot be empty")
         }
-        else
-        console.log($("#userSearch").val().trim())
+        
+        userInput = userInput.trim()
+        
+        var searchURL = "https://newsapi.org/v2/everything?q=" + userInput +  "&apiKey=6c1e4b0f26f7483c8541930bb8709d77"
+        
         $.get(searchURL).then(function(data) {
             $("#search-1").text(data.articles[0].title)
             $("#searchpara-1").text(data.articles[0].description)
@@ -32,6 +34,18 @@ $(document).ready(function() {
             $("#content-5").text(data.articles[5].description)
             console.log(data.articles)
         });
+    }
+
+
+    $('#userSearch').on("keypress", function (e) {
+        if(e.which === 13) {
+            renderSearch();
+        }
+    });
+
+    
+    $("#searchBtn").on("click", function () {
+        renderSearch()
     });
 });
 
