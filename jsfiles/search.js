@@ -11,7 +11,7 @@ $(document).ready(function() {
         $("#searchResults").removeClass("hide-content")
         var userInput = $("#userSearch").val()
         if(!userInput) {
-            return alert("Search field cannot be empty")
+            window.location.reload();
         }
         
         userInput = userInput.trim()
