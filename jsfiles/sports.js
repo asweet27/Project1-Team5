@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
   }
 
-  buildArticles('http://site.api.espn.com/apis/site/v2/sports/football/nfl/news', '#articles')
-  buildArticles('http://site.api.espn.com/apis/site/v2/sports/basketball/nba/news', '#articles')
+  buildArticles('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news', '#articles')
+  buildArticles('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news', '#articles')
 });
 
