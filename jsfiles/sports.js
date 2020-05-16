@@ -13,9 +13,11 @@ $(document).ready(function() {
         html += '<h3>'+article.headline+'</h3>'
         html += '<img class="thumbnail" src="'+article.images[0].url+'">'
         html += '<p>'+article.description+'</p>'
+        html += '<br>'
         html += '<a "id="links" href="'+article.links.web.href+'" target="_blank"> Click here for full article </a>'
         html += '</div>'
-        
+        html += '<br>'
+
         counter++ 
 
         if (counter <= 3){
